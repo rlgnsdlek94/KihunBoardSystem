@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+    <!-- 기본 버튼 스타일 설정 -->
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>
