@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.kbs.fragment.CalculatorFragment
 import com.example.kbs.fragment.CalendarFragment
+import com.example.kbs.fragment.CanvasFragment
 import com.example.kbs.fragment.MemoFragment
 import com.example.kbs.fragment.StopWatchFragment
 
@@ -15,7 +16,7 @@ class CategoryPagerAdapter(fragmentActivity: FragmentActivity) :
 
     fun setCategorise() {
         // 언어에 따라 카테고리 데이터를 업데이트
-        categories = listOf("계산기","스톱워치","달력") //, "ETC"
+        categories = listOf("계산기","스톱워치","달력","메모","그림판") //, "ETC"
         notifyDataSetChanged() // 데이터 변경을 어댑터에 알림
     }
 
@@ -29,6 +30,8 @@ class CategoryPagerAdapter(fragmentActivity: FragmentActivity) :
             0 -> CalculatorFragment()
             1 -> StopWatchFragment()
             2 -> CalendarFragment()
+            3 -> MemoFragment()
+            4 -> CanvasFragment()
             else -> CalculatorFragment() //WordFragment()
         }
     }
